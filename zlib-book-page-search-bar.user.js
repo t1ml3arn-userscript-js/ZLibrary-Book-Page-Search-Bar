@@ -91,15 +91,19 @@ function YearSelectOptions(to, from, initial) {
 
 /**
  * 
- * @param {Boolean} bookSearch If `true` - the books search form will be created,
+ * @param {Boolean} articleSearch If `false` - the book search form will be created,
  * otherwise it will be the article search form
  */
-function SearchForm(bookSearch = true) {
+function SearchForm(articleSearch = false) {
     const form = $(searchFormHtml)
 
     // NOTE articles search bar differs with abscence of languages and extension <selects> 
     // and also differs with main input placeholder - "Search for title, author, DOI, journal, md5.."
     // Define book or articel search form
+    if (articleSearch) {
+        form.find('select[name="language"], select[name="extension"]').remove()
+        form.find('#searchFieldx').attr('placeholder', 'Search for title, author, DOI, journal, md5..')
+    }
 
     // set options for year select
     const year = new Date().getFullYear()
@@ -178,7 +182,12 @@ function SearchFormToggler_md() {
         .click(_ => $("#searchForm").slideToggle(200, setSearchBarVisibilityCookie))
 }
 
-const searchForm = SearchForm()
+// find it is book or article search
+const articleHosts = ["booksc.xyz"]
+const host = window.location.hostname
+const isArticleHost = articleHosts.indexOf(host) !== -1
+
+const searchForm = SearchForm(isArticleHost)
 
 const show = window.localStorage.getItem(KEY_SHOW_SEARCH_BAR)
 if (show !== null) {
