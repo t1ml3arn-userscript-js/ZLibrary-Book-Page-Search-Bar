@@ -54,7 +54,7 @@ const KEY_SHOW_SEARCH_BAR = "zlib-search-bar-show"
 function onSubmit(e) {
     // Find all inputs
     // and set them disabled if they have no value.
-    // No idea for what is is, 
+    // No idea for what it is, 
     // just tried to mimic ZLib behavior ¯\_(ツ)_/¯
     $(e.currentTarget)
         .find('select, input')
