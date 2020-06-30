@@ -3,8 +3,10 @@
 // @description Adds a search bar on book pages. Search new books or articles without going back to the main page.
 // @namespace   T1mL3arn
 // @version     1.0.0
-// @match       http*://b-ok.cc/book/*
-// @match       http*://booksc.xyz/book/*
+// @match       http*://*.b-ok.cc/book/*
+// @match       http*://*.bookos-z1.org/book/*
+// @match       http*://*.booksc.xyz/book/*
+// @match       http*://*.zlibraryexau2g3p.onion/book/*
 // @grant       none
 // @author      T1mL3arn
 // ==/UserScript==
