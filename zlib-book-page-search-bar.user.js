@@ -153,6 +153,16 @@ function SearchForm(articleSearch = false) {
 
 function SearchFormToggler() {
     
+    // Rule to hide search form toggle button on small screens.
+    // Without this the toggler can be seen in two places on the page.
+    $("<style></style>").text(`
+    @media (max-width: 768px){
+        .zlib-search-bar-toggler--d-sm-none {
+            display: none !important;
+        }
+    }
+    `).appendTo(window.document.head)
+
     const html = `<div>
     <span class="glyphicon glyphicon-search"></span>
 </div>`
@@ -163,6 +173,7 @@ function SearchFormToggler() {
         "height": "100%",
         "cursor": "pointer",
     })
+    .addClass("zlib-search-bar-toggler--d-sm-none")
     .hover(
         e => $(e.currentTarget).css({ "background-color": "#d6d6d6" })
         , e => $(e.currentTarget).css({ "background-color": "" })
