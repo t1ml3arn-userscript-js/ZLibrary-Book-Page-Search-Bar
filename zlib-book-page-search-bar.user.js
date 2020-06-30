@@ -178,7 +178,6 @@ function SearchFormToggler_md() {
         .click(_ => $("#searchForm").slideToggle(200, setSearchBarVisibilityCookie))
 }
 
-// create and hide search form
 const searchForm = SearchForm()
 
 const show = window.localStorage.getItem(KEY_SHOW_SEARCH_BAR)
