@@ -8,6 +8,7 @@
 // @match       http*://*.booksc.xyz/book/*
 // @match       http*://*.zlibraryexau2g3p.onion/book/*
 // @grant       none
+// @icon        icon.png
 // @author      T1mL3arn
 // @license     WTFPL
 // @homepageURL https://github.com/t1ml3arn-userscript-js/ZLibrary-Book-Page-Search-Bar
