@@ -10,6 +10,8 @@
 // @grant       none
 // @author      T1mL3arn
 // @license     WTFPL
+// @homepageURL https://github.com/t1ml3arn-userscript-js/ZLibrary-Book-Page-Search-Bar
+// @supportURL  https://github.com/t1ml3arn-userscript-js/ZLibrary-Book-Page-Search-Bar/issues
 // ==/UserScript==
 
 (() => {
