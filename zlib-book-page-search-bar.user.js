@@ -214,7 +214,7 @@ if (show !== null) {
 $('.col-md-12.itemFullText').prepend(searchForm)
 
 // search button for medium and up screens
-$('<li></li>').append(SearchFormToggler()).insertBefore($('.nav.navbar-nav.navbar-right .dropdown'))
+$('<li></li>').append(SearchFormToggler()).insertBefore($('.nav.navbar-nav.navbar-right .dropdown').last())
 
 // search button for up to medium screens
 SearchFormToggler_md().insertAfter($('.navbar-header button.navbar-toggle'))
