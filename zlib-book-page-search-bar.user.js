@@ -154,6 +154,15 @@ function SearchForm(articleSearch = false) {
     return form
 }
 
+function SearchFormTogglerBase() {
+    const html = `
+    <div>
+        <span class="glyphicon glyphicon-search"></span>
+    </div>`
+
+    return $(html).click(_ => $("#searchForm").slideToggle(200, setSearchBarVisibilityCookie))
+}
+
 function SearchFormToggler() {
     
     // Rule to hide search form toggle button on small screens.
@@ -166,10 +175,7 @@ function SearchFormToggler() {
     }
     `).appendTo(window.document.head)
 
-    const html = `<div>
-    <span class="glyphicon glyphicon-search"></span>
-</div>`
-    return $(html).css({
+    return SearchFormTogglerBase().css({
         "display": "block", 
         "padding": "15px",
         "box-sizing": "border-box",
@@ -181,21 +187,18 @@ function SearchFormToggler() {
         e => $(e.currentTarget).css({ "background-color": "#d6d6d6" })
         , e => $(e.currentTarget).css({ "background-color": "" })
     )
-    .click(_ => $("#searchForm").slideToggle(200, setSearchBarVisibilityCookie))
 }
 
 function SearchFormToggler_md() {
-    const html = `<div>
-    <span class="glyphicon glyphicon-search" style="top: -2px"></span>
-</div>`
+    const btn = SearchFormTogglerBase()
+    btn.find('.glyphicon.glyphicon-search').css({ top: "-2px"})
 
-    return $(html).addClass('navbar-toggle')
+    return btn.addClass('navbar-toggle')
         .css({ 
             'cursor': 'pointer',
             'height': '34px',
             'margin-right': '4px',
         })
-        .click(_ => $("#searchForm").slideToggle(200, setSearchBarVisibilityCookie))
 }
 
 // find it is book or article search
