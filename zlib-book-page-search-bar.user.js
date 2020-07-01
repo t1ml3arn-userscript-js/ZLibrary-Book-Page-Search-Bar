@@ -156,7 +156,7 @@ function SearchFormToggler() {
     // Rule to hide search form toggle button on small screens.
     // Without this the toggler can be seen in two places on the page.
     $("<style></style>").text(`
-    @media (max-width: 768px){
+    @media (max-width: 767px){
         .zlib-search-bar-toggler--d-sm-none {
             display: none !important;
         }
