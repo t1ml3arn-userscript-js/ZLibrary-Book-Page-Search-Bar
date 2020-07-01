@@ -1,11 +1,3 @@
-## License
-
-Copyright © 2020 T1mL3arn
-
-This work is free. You can redistribute it and/or modify it under the
-terms of the Do What The Fuck You Want To Public License, Version 2,
-as published by Sam Hocevar. See the [full WTFPL text](http://www.wtfpl.net/txt/copying/) for more details.
-
 # ZLibrary Book Page Search Bar
 
 ## Description
@@ -25,4 +17,6 @@ Adds a search bar on book pages. Search new books or articles without going back
 
 ## License
 
-Project license
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the [full WTFPL text](http://www.wtfpl.net/txt/copying/) for more details.

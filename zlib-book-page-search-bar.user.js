@@ -9,6 +9,7 @@
 // @match       http*://*.zlibraryexau2g3p.onion/book/*
 // @grant       none
 // @author      T1mL3arn
+// @license     WTFPL
 // ==/UserScript==
 
 (() => {
