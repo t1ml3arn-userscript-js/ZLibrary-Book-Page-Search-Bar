@@ -2,13 +2,13 @@
 // @name        ZLibrary Book Page Search Bar
 // @description Adds a search bar on book pages. Search new books or articles without going back to the main page.
 // @namespace   T1mL3arn
-// @version     1.0.0
+// @version     1.0.1
 // @match       http*://*.b-ok.cc/book/*
 // @match       http*://*.bookos-z1.org/book/*
 // @match       http*://*.booksc.xyz/book/*
 // @match       http*://*.zlibraryexau2g3p.onion/book/*
 // @grant       none
-// @icon        icon.png
+// @icon        https://github.com/t1ml3arn-userscript-js/ZLibrary-Book-Page-Search-Bar/raw/master/icon.png
 // @author      T1mL3arn
 // @license     WTFPL
 // @homepageURL https://github.com/t1ml3arn-userscript-js/ZLibrary-Book-Page-Search-Bar
