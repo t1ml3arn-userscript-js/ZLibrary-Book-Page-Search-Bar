@@ -8,6 +8,7 @@
 // @match       http*://*.booksc.xyz/book/*
 // @match       http*://book4you.org/book/*
 // @match       http*://ru1lib.org/book/*
+// @match       http*://3lib.net/book/*
 // @match       http*://*.zlibraryexau2g3p.onion/book/*
 // @grant       none
 // @icon        https://github.com/t1ml3arn-userscript-js/ZLibrary-Book-Page-Search-Bar/raw/master/icon.png
